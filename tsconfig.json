@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // Node ejecuta los .ts directamente (type stripping), así que tsc solo verifica tipos
+    "noEmit": true,
+    "module": "nodenext",
+    "target": "esnext",
+    "types": [],
+
+    // Solo sintaxis que Node puede "borrar" (sin enums ni parameter properties)
+    "erasableSyntaxOnly": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+
+    // Chequeo estricto
+    "strict": true,
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true
+  }
+}
